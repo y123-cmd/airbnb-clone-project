@@ -39,4 +39,29 @@ Coordinates the team, manages timelines, tracks progress, and ensures that proje
 
 ### Quality Assurance (QA) Tester
 Tests the application for bugs, usability issues, and performance problems. Makes sure the product meets all requirements before going live.
+## Technology Stack
+
+### Django
+A high-level Python web framework used to build the backend of the application. It enables fast development and clean design, ideal for building RESTful APIs and handling business logic.
+
+### PostgreSQL
+A powerful open-source relational database system used to store and manage user data, listings, bookings, and more. It works seamlessly with Django for efficient data operations.
+
+### HTML/CSS
+Used to build and style the frontend pages that users interact with. HTML structures the content, while CSS makes it visually appealing.
+
+### JavaScript
+Adds interactivity to the frontend, such as form validation, dynamic page updates, and user interface enhancements.
+
+### Git & GitHub
+Used for version control and collaboration. Tracks code changes and allows multiple developers to work on the project simultaneously.
+
+### Postman
+A tool for testing and documenting RESTful APIs. Helps ensure that API endpoints function correctly and return the expected data.
+
+### Ubuntu/Linux Terminal
+The command line interface used for running scripts, managing the server, setting permissions, and deploying the application.
+
+### Virtual Environments (venv)
+Isolates Python packages for the project to prevent conflicts with system-wide packages and dependencies.
 
