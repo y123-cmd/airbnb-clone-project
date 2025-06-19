@@ -136,3 +136,25 @@ Isolates Python packages for the project to prevent conflicts with system-wide p
 **Relationships:**
 - A payment is linked to a specific booking
 
+## Feature Breakdown
+###  User Management
+Allows users to register, log in, and manage their profiles securely. This feature handles authentication and ensures that only authorized users can access or modify data.
+
+###  Property Management
+Enables hosts to list their properties with details such as title, description, location, and pricing. It provides a platform for managing multiple listings and updating information as needed.
+
+###  Booking System
+Users can search for properties, select available dates, and make reservations. This system ensures availability tracking and prevents booking conflicts.
+
+###  Payment Processing
+Integrates payment functionality so users can securely pay for bookings. It includes payment confirmation and error handling for failed transactions.
+
+###  Review & Rating System
+Users can leave reviews and rate properties after their stay. This builds trust and helps future guests make informed decisions.
+
+###  Search and Filters
+Allows users to search for properties based on location, price range, dates, and other filters. This enhances user experience by quickly narrowing down relevant options.
+
+### Admin Dashboard (optional)
+An admin interface to manage users, properties, bookings, and reviews. It provides oversight and control over the platform’s operations.
+
