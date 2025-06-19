@@ -65,3 +65,74 @@ The command line interface used for running scripts, managing the server, settin
 ### Virtual Environments (venv)
 Isolates Python packages for the project to prevent conflicts with system-wide packages and dependencies.
 
+## Database Design
+###  Users
+**Fields:**
+- `id` (Primary Key)
+- `name`
+- `email`
+- `password_hash`
+- `created_at`
+
+**Relationships:**
+- A user can list multiple properties
+- A user can make multiple bookings
+- A user can leave multiple reviews
+
+---
+
+###  Properties
+**Fields:**
+- `id` (Primary Key)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+- `owner_id` (Foreign Key to Users)
+
+**Relationships:**
+- A property belongs to one user (the owner)
+- A property can have multiple bookings and reviews
+
+---
+
+### Bookings
+**Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key to Users)
+- `property_id` (Foreign Key to Properties)
+- `start_date`
+- `end_date`
+- `total_price`
+
+**Relationships:**
+- A booking belongs to one user
+- A booking is linked to one property
+
+---
+
+### Reviews
+**Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key to Users)
+- `property_id` (Foreign Key to Properties)
+- `rating` (1–5)
+- `comment`
+
+**Relationships:**
+- A review is written by a user for a property
+- A property can have many reviews
+
+---
+
+###  Payments
+**Fields:**
+- `id` (Primary Key)
+- `booking_id` (Foreign Key to Bookings)
+- `amount`
+- `payment_method`
+- `payment_status`
+
+**Relationships:**
+- A payment is linked to a specific booking
+
