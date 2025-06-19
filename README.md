@@ -158,3 +158,23 @@ Allows users to search for properties based on location, price range, dates, and
 ### Admin Dashboard (optional)
 An admin interface to manage users, properties, bookings, and reviews. It provides oversight and control over the platform’s operations.
 
+## API Security
+
+Securing the backend APIs is essential to protect sensitive user data, ensure application integrity, and maintain user trust. The following key security measures will be implemented in this project:
+
+### Authentication
+Only registered and verified users will be allowed to access protected endpoints. Authentication mechanisms such as token-based authentication (e.g., JWT) will be used to ensure users are who they claim to be.
+
+### ️ Authorization
+Controls will be in place to ensure users can only perform actions they’re permitted to. For example, only property owners can edit or delete their listings, while general users can only view and book properties.
+
+###  Rate Limiting
+To prevent abuse or brute-force attacks, rate limiting will be implemented to restrict the number of API requests a user can make within a certain time frame.
+
+###  Data Protection
+Sensitive information like passwords will be hashed, and personal user data will be securely stored and transferred using HTTPS.
+
+###  Securing Payments
+Payment processes will be handled using secure gateways, ensuring that financial transactions are encrypted and protected against fraud or interception.
+
+Implementing these measures ensures that the platform is safe, reliable, and trustworthy for all users.
