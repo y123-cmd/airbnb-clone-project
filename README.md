@@ -178,3 +178,13 @@ Sensitive information like passwords will be hashed, and personal user data will
 Payment processes will be handled using secure gateways, ensuring that financial transactions are encrypted and protected against fraud or interception.
 
 Implementing these measures ensures that the platform is safe, reliable, and trustworthy for all users.
+## CI/CD Pipeline
+
+CI/CD stands for Continuous Integration and Continuous Deployment. It is a development practice where code changes are automatically built, tested, and deployed to ensure fast and reliable delivery of software.
+
+Implementing a CI/CD pipeline helps catch bugs early, speeds up development, and reduces the risk of breaking the application during updates. Every time new code is pushed, the pipeline can automatically test and deploy it, improving team productivity and project stability.
+
+### Tools Used
+- **GitHub Actions**: Automates workflows like testing and deployment directly from the GitHub repository.
+- **Docker**: Provides consistent development and production environments through containerization.
+- **Heroku / Render / AWS / Azure**: Platforms that can be used to deploy the application as part of the pipeline.
